@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Quicksand", sans-serif;
   margin: 0;
@@ -76,10 +80,21 @@ aside .profile {
   text-align: center;
 }
 
+aside .profile .lambang {
+  width: 50%;
+}
 aside {
   float: right;
   width: 25%;
   padding-left: 20px;
+}
+
+aside .informasi h3 {
+  text-align: center;
+}
+
+aside .informasi table {
+  margin: 0 auto;
 }
 
 .profile img {
@@ -105,13 +120,17 @@ footer {
 
 /* breakpoint */
 /* tampilan screen dengan lebar maksimal 1000px*/
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 960px) {
   aside {
     width: 100%;
     padding: 0;
   }
 
-  main {
-    margin: auto;
+  aside .profile .lambang {
+    width: 35%;
+  }
+
+  #content {
+    width: 100%;
   }
 }
